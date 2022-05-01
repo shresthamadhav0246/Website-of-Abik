@@ -1,0 +1,23 @@
+.sitereport{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:1rem;
+    background-color: #aaa;
+}
+.heading__sitereport{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.page{
+    font-size: 20px;
+}
+.sitereport__image{
+    width: 50%;
+    height:300px;
+    object-fit: cover;
+
+}
+.site{
+    display: flex;
+
+}

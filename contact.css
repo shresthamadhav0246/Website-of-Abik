@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  .contact__heading h1{
+      background-color: #cccac2;
+      margin-bottom: 0;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+  }
+  
+  /* Style inputs */
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #cccac2;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #2875b8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #217ecf;
+  }
+
+  .container__contact {
+    border-radius: 5px;
+    background-color: #40a7de;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: (1fr,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "form info";
+                          grid-gap:20px;
+  }
+  
+
+  
+ 
+  .form{
+      grid-area: form;
+  }
+  .info{
+    grid-area: info;
+    text-align: center;
+}
+.phone{
+    display: block;
+    padding:2rem 0 2rem 0;
+}
+.phone >a{
+    color: black;
+}
+.email{
+    display: block;
+    padding-bottom: 2rem;
+}
+.email >a{
+    color: black;
+}
+.address{
+    display: block;
+}
+.social{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 8rem 1rem 8rem;
+    cursor: pointer;
+    background-color: black;
+
+}
+.social >li >a >i:hover{
+    transform: scale(1.5);
+    text-decoration: none;
+}
+.map__northampton{
+    width:400px;
+}
+/*for Mobile version*/
+@media screen and (max-width: 800px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .container__contact{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "form"
+                             "info";
+    }
+    .social{
+        background-color: black;
+    }
+    .contact__info{
+        text-align: center;
+        align-items: center;
+
+    }
+  }
